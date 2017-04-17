@@ -1,0 +1,14 @@
+{
+  "name": "webpack1",
+  "version": "1.0.0",
+  "description": "some practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iSokol",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^2.4.1"
+  }
+}
