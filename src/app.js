@@ -1,1 +1,1 @@
-console.log('hello new webpack');
+console.log('hello new webpack watch');
