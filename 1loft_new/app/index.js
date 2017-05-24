@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,27 +71,29 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony default export */ __webpack_exports__["a"] = (function (array, className) {
-    var menu = document.createElement('ul');
-    menu.className = className;
-    var listItems = '';
-    array.forEach(function(item) {
-        listItems += '<li>' + item + '</li>';
-    });
-    menu.innerHTML = listItems;
-    return menu;
-});;
+/* harmony export (immutable) */ __webpack_exports__["a"] = createMenu;
+function createMenu(arr, className) {
+    let newUl = document.createElement('ul');
+    newUl.className = className;
+    // arr.forEach( (i) => newUl.innerHTML += `<li>${i}</li>`);
+    newUl.innerHTML = arr.map( (i) => `<li>${i} + maps </li>`).join(' ');
+    return newUl;
+}
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_menu_menu__ = __webpack_require__(0);
 
-var menu = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__menu__["a" /* default */])(['Моя главная страница', 'Обо мне', 'Портолио'], menu);
+var menu = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__components_menu_menu__["a" /* default */])(['sokol', 'falcon'], 'menu')
 document.body.appendChild(menu);
+
+console.log('in index.js');
+
 
 /***/ })
 /******/ ]);
