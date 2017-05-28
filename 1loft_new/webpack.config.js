@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const merge = require('webpack-merge');
 const pug = require('./webpack/pug');
 const devServer = require('./webpack/devserver');
+const sass = require('./webpack/sass');
 
 const PATHS = {
     src: path.join(__dirname, 'src'),
@@ -42,7 +43,8 @@ module.exports = function(env) {
     if ( env === 'development' ) {
         return merge([
             common,
-            devServer()
+            devServer(),
+            sass()
         ])
     }
 }
