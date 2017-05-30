@@ -1,5 +1,5 @@
-import 'normalize.css';
 import './menu.scss';
+import 'normalize.css';
 
 export default function createMenu(arr, className) {
     let newUl = document.createElement('ul');

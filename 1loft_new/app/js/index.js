@@ -63,17 +63,26 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = createMenu;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_scss__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_scss__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__menu_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__menu_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_normalize_css__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_normalize_css__);
+
 
 
 function createMenu(arr, className) {
@@ -85,34 +94,38 @@ function createMenu(arr, className) {
 }
 
 /***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-throw new Error("Module parse failed: E:\\webpack\\practice\\1loft_new\\src\\pages\\components\\menu\\menu.scss Unexpected token (1:3)\nYou may need an appropriate loader to handle this file type.\n| ul {\r\n|     display: flex;\r\n|     padding: 5px;\r");
-
-/***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: E:\\webpack\\practice\\1loft_new\\src\\pages\\blog\\blog.scss Unexpected token (1:3)\nYou may need an appropriate loader to handle this file type.\n| h1 {\r\n|     color: blue;\r\n| }");
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 3 */,
 /* 4 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 5 */,
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blog_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__blog_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_menu_menu__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_scss__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__index_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__index_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_normalize_css__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_normalize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_normalize_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_menu_menu__ = __webpack_require__(1);
 
 
 
-var menu = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__components_menu_menu__["a" /* default */])(['sokol', 'falcon'], 'main-menu')
+
+var menu = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__components_menu_menu__["a" /* default */])(['sokol', 'falcon'], 'menu')
 document.body.appendChild(menu);
 
-console.log('in blog.js');
+console.log('in index.js');
 
 
 /***/ })
