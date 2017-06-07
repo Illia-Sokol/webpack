@@ -447,8 +447,9 @@ template {
 }
 ul {
   display: flex;
-  padding: 5px;
-  border: 1px solid paleturquoise; }
+  padding: 5px 20px;
+  border: 1px solid paleturquoise;
+  background: url(../images/menu.svg) 0 no-repeat; }
 
 li {
   color: blue;
